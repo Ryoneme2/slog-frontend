@@ -5,11 +5,13 @@ import bearStore from '../stores/bearStore';
 const Home: NextPage = () => {
   return (
     <>
-      <h1 className='text-red-500'>Hello slog</h1>
-      <div>
-        <Print />
-        <TestComponents />
-      </div>
+      <main>
+        <h1 className='text-red-500'>Hello slog</h1>
+        <div>
+          <Print />
+          <TestComponents />
+        </div>
+      </main>
     </>
   );
 };
