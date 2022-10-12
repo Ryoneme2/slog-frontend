@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  excludeFile: (str) => /\*.{spec,test,cy}.{tsx.ts}/.test(str),
-  webpack: (config, { dev }) => {
-    config.module.rules.push({
-      test: /\*.cy.tsx$/,
-    });
-    return config;
+  pwa: {
+    dest: 'public',
+    runtimeCaching,
   },
 };
 
