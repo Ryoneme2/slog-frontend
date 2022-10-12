@@ -1,4 +1,4 @@
-import Index from './index';
+import Index from '../pages/index';
 const counterSelector = '[data-cy=counter]';
 const increaseSelector = '[data-cy=increase]';
 

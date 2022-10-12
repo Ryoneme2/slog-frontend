@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <main>
-        <h1 className='text-red-500'>Hello slog</h1>
+        <h1 className='text-red-500 font-bold'>Hello slog</h1>
         <div>
           <Print />
           <TestComponents />
