@@ -6,7 +6,6 @@ type BearsState = {
   removeAllBears: () => void
 }
 
-
 const useBearStore = create<BearsState>((set) => ({
   bears: 0,
   increasePopulation: () =>
