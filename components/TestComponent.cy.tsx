@@ -1,7 +1,7 @@
-import TestComponent from './TestComponents';
+import { Print } from './TestComponents';
+const counterSelector = '[data-cy=counter]';
 
-describe('<Stepper>', () => {
-  it('mounts', () => {
-    cy.mount(<TestComponent />);
-  });
+it('init value', () => {
+  cy.mount(<Print init={102} />);
+  cy.get(counterSelector).should('have.text', 'bear 102');
 });
