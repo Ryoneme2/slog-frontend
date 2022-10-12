@@ -10,7 +10,7 @@ const TestComponents = () => {
 
   return (
     <button data-cy='increase' onClick={setBare}>
-      click me
+      click me!
     </button>
   );
 };
